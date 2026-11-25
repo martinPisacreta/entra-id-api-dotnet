@@ -40,7 +40,7 @@ dotnet test EntraApi.sln --configuration Release
 
 The 14 xUnit integration cases exercise the real JWT middleware using ephemeral local RSA keys and static discovery; identity-network requests are blocked. Coverage includes public health, valid scope and role access, missing tokens, incorrect audience or issuer, expired tokens, untrusted signatures, missing permissions and exact scope matching. Production validation settings remain enabled.
 
-All 14 tests passed locally. No live Microsoft tenant or real credentials were used; live Entra integration remains unverified. GitHub Actions runs the same Release tests when this directory is the repository root; execution on GitHub remains pending publication.
+All 14 tests passed locally. No live Microsoft tenant or real credentials were used; live Entra integration remains unverified. GitHub Actions runs the same Release tests on every push; the latest run passed (see the Actions tab).
 
 ## License
 
